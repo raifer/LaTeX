@@ -1,0 +1,78 @@
+% -*- coding: utf-8 -*-
+
+\documentclass[a4peper, 11pt, french]{article}
+
+%- Encodage langue et font
+% Typographie française. et indentation de la première ligne des paragraphes.
+\usepackage{babel, indentfirst}
+% Encodage UTF-8
+\usepackage[utf8]{inputenc}
+
+%-- Font
+% Mode d'encodage de la police
+% T1 
+% T1 est le nom LaTeX pour Fontes extended computer modern (EC). (codage des caractères dit « de Cork.
+% Dans ce cas LATEX fera appel, par défaut, aux fontes ec pour le mode texte et aux fontes cm pour le mode mathématique. 
+\usepackage[T1]{fontenc}
+
+% French Cursive, pour le Texte
+%\usepackage[default]{frcursive}
+% police Euler pour les mathématiques.
+%\usepackage{euler}
+
+% Affichage correct des caractères diacritiqués français.
+%\usepackage{lmodern}
+\usepackage{lmodern,tgpagella}
+
+%- inclure des images
+\usepackage{graphicx}
+
+%- Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+% siunitx pour formater les nombres avec des abréviation en plus.
+
+\usepackage[load-configurations = abbreviations]{siunitx}
+\sisetup{locale = FR, detect-all} % L’option « detect-all » permettra de garder la même fonte que dans le texte.
+
+
+%- Mise en page
+% Largeur du texte.
+\textwidth 17cm
+% Hauteur du texte.
+\textheight 25cm
+
+%-- Définition des marges
+% Marge supplémentaire au dessus de l'entête.
+%\topmargin 
+
+% Marge supplémentaire dans les pages impaires d'un document recto-verso 
+% ou pour toutes les pages dans le cas d'un document recto uniquement.
+%\oddsidemargin -0.24cm
+
+% Marge supplémentaire dans la marge gauche des pages paires des documents recto-verso.
+%\evensidemargin -1.24cm 
+
+%-- Entête et Bas de page
+% Hauteur de l'entête.
+%\headheight 
+%\headheight -1.5cm % Version Ensimag
+
+% Distance entre la dernière ligne d'entête et la première ligne du corps du document.
+%\headsep 
+
+%\topskip 0cm
+
+% Distance entre la dernière ligne du texte et la première ligne du bas de page.
+%\footskip 
+
+%% Note de marge
+% Espace vertical minimum entre deux notes de marge.
+%\marginparpush 
+
+% Marge horizontal entre le corps du document et les notes de marge.
+%\marginparsep 
+
+% Llargeur des notes de marge.
+%\marginparwidth 
+
